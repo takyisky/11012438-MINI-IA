@@ -4,10 +4,12 @@ import {
     patientRouter}
  from "./routes/patient.js"
 
- await connectDb {
+ await connectDb (
     "mongodb://localhost:27017"
- }
+ )
  export const server = express()
- server.use{exprfess.json()}
+ server.use{express.json()}
 
- server
+ serve.use(
+    *"/patient"
+ )
